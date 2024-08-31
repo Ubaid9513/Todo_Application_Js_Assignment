@@ -5,22 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo Application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"> -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 </head>
 
 <body>
     <div class="container">
-        <h1>ToDo List</h1>
+        <h1>ToDo <span>List</span></h1>
         <div class="todo_header">
             <input id="task_inp" type="text" placeholder="Enter your Task">
-            <button class="btn" onclick="addTask(this)">Add Task</button>
+            <button class="btn" id="addInputTask" onclick="addTask(this)">Add Task</button>
+            <button class="btn" id="newEditBtn">Edit Button</button>
             <button class="btn" onclick="delAll(this)">Delete All</button>
         </div>
         <div id="task_list">
 
         </div>
     </div>
+
 
 
     <script src="app.js"></script>
